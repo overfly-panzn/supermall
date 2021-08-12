@@ -55,11 +55,6 @@
     height: 49px;
   }
 
-  .tab-bar-item img {
-    width: 24px;
-    height: 24px;
-  }
-
   .active {
     color: red;
   }

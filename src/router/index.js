@@ -1,12 +1,10 @@
-import Vue from 'vue'
-import VueRouter from "vue-router";
+import { createRouter, createWebHistory } from 'vue-router'
 
 const Home = ()=>import('views/home/Home')
 const Categroy = ()=>import('views/categroy/categroy')
 const Cart = ()=>import('views/cart/Cart')
 const Profile = ()=>import('views/profile/Profile')
 
-Vue.use(VueRouter)
 const routes = [
   {
     path:'',
@@ -29,9 +27,10 @@ const routes = [
     component:Profile
   }
 ]
-const router = new VueRouter({
-  routes,
-  mode:'history'
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes
 })
 
 export default router
