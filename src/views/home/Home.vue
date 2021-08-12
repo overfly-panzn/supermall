@@ -2,7 +2,7 @@
   <div id="home">
     <NarBar class="home-nav">
       <template #center>
-        <div>购物车</div>
+        <div>购物车 </div>
       </template>
     </NarBar>
     <Swiper>
